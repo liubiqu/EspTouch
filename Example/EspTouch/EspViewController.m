@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 白 桦. All rights reserved.
 //
 
-#import "ESPViewController.h"
+#import "EspViewController.h"
 #import "ESPTouchTask.h"
 #import "ESPTouchResult.h"
 #import "ESP_NetUtil.h"
@@ -51,7 +51,7 @@
 
 @end
 
-@interface ESPViewController ()
+@interface EspViewController ()
 
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *_spinner;
 @property (weak, nonatomic) IBOutlet UITextField *_pwdTextView;
@@ -76,7 +76,7 @@
 @property (nonatomic, strong) EspTouchDelegateImpl *_esptouchDelegate;
 @end
 
-@implementation ESPViewController
+@implementation EspViewController
 
 - (IBAction)tapConfirmCancelBtn:(UIButton *)sender
 {
