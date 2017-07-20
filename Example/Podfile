@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'EspTouch_Example' do
+  pod 'EspTouch', :path => '../'
+
+  target 'EspTouch_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
