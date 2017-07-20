@@ -7,7 +7,7 @@
 //
 
 #import "EspAppDelegate.h"
-#import "ESPViewController.h"
+#import "EspViewController.h"
 #import "ESP_NetUtil.h"
 
 #import <SystemConfiguration/CaptiveNetwork.h>
@@ -46,7 +46,7 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    ESPViewController *vc = (ESPViewController *)self.window.rootViewController;
+    EspViewController *vc = (EspViewController *)self.window.rootViewController;
     NSDictionary *netInfo = [self fetchNetInfo];
     vc.ssidLabel.text = [netInfo objectForKey:@"SSID"];
     vc.bssid = [netInfo objectForKey:@"BSSID"];
