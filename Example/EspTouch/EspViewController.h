@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EspViewController : UIViewController<UITextFieldDelegate>
+@interface ESPViewController : UIViewController<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *ssidLabel;
 @property (strong, nonatomic) NSString *bssid;
 @end

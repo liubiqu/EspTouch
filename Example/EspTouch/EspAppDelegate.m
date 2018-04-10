@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 白 桦. All rights reserved.
 //
 
-#import "EspAppDelegate.h"
-#import "EspViewController.h"
+#import "ESPAppDelegate.h"
+#import "ESPViewController.h"
 #import "ESP_NetUtil.h"
 
 #import <SystemConfiguration/CaptiveNetwork.h>
 
-@implementation EspAppDelegate
+@implementation ESPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -29,7 +29,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     if (application.backgroundTimeRemaining > 10)
     {
@@ -46,7 +46,7 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    EspViewController *vc = (EspViewController *)self.window.rootViewController;
+    ESPViewController *vc = (ESPViewController *)self.window.rootViewController;
     NSDictionary *netInfo = [self fetchNetInfo];
     vc.ssidLabel.text = [netInfo objectForKey:@"SSID"];
     vc.bssid = [netInfo objectForKey:@"BSSID"];
@@ -75,13 +75,13 @@
 - (NSDictionary *)fetchNetInfo
 {
     NSArray *interfaceNames = CFBridgingRelease(CNCopySupportedInterfaces());
-    //    NSLog(@"%s: Supported interfaces: %@", __func__, interfaceNames);
+//    NSLog(@"%s: Supported interfaces: %@", __func__, interfaceNames);
     
     NSDictionary *SSIDInfo;
     for (NSString *interfaceName in interfaceNames) {
         SSIDInfo = CFBridgingRelease(
                                      CNCopyCurrentNetworkInfo((__bridge CFStringRef)interfaceName));
-        //        NSLog(@"%s: %@ => %@", __func__, interfaceName, SSIDInfo);
+//        NSLog(@"%s: %@ => %@", __func__, interfaceName, SSIDInfo);
         
         BOOL isNotEmpty = (SSIDInfo.count > 0);
         if (isNotEmpty) {

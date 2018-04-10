@@ -19,6 +19,18 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "EspTouch"
 ```
+## 更新日志
+==================================v0.3.5.4==================================
+
+Support AES128 encryption
+
+Usage:
+
+NSString *secretKey = @"1234567890123456"; // TODO use your own key
+
+ESPAES *aes = [[ESPAES alloc] initWithKey:secretKey];
+
+ESPTouchTask *task = [[ESPTouchTask alloc]initWithApSsid:apSsid andApBssid:apBssid andApPwd:apPwd andAES:aes];
 
 ## Author
 

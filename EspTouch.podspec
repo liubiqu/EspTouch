@@ -1,37 +1,32 @@
-#
-# Be sure to run `pod lib lint EspTouch.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'EspTouch'
-  s.version          = '3.5.3'
+  s.version          = '3.5.4'
   s.summary          = 'EspTouch Espressif wifi module，more see:https://github.com/EspressifApp/EsptouchForIOS.'
   s.description      = <<-DESC
+==================================v0.3.5.4  2018-04-09====================== 
+1. Support AES128 encryption
+2. Usage:
+
+NSString *secretKey = @"1234567890123456"; // TODO use your own key
+
+ESPAES *aes = [[ESPAES alloc] initWithKey:secretKey];
+
+ESPTouchTask *task = [[ESPTouchTask alloc]initWithApSsid:apSsid andApBssid:apBssid andApPwd:apPwd andAES:aes];
 ==================================v0.3.5.3==================================
-
-1.  isSsidHidden is YES forever
-
-2.  Usage:
- 
+1. isSsidHidden is YES forever
+2. Usage:
     The same as v0.3.5.2.(Support IPv6 only environment).
 
 ==================================v0.3.5.2==================================
-
 1.  Espressif's RTOS SDK Smart Config is updated to v2.5.5
     <b>Only RTOS-v2.5.5 and above support IPv6 only environment</b> 
     <b>Esptouch v0.3.5.1 only support Espressif's Smart Config v2.4 and above</b>
     <b>IPv4 is preferred and the old version is compatible</b>
 
 2.  Usage:
-
     The same as v0.3.5.1.(Support IPv6 only environment).
 
 3.  Fix a bug about check IPv4 address private
-
 4.  Try to open network permission when launch app after ios10.0
     (Fix the bug some ios10.0 later can't use Esptouch)
 
@@ -43,7 +38,6 @@ Pod::Spec.new do |s|
     <b>IPv4 is preferred and the old version is compatible</b>
 
 2.  Usage:
-
     The same as v0.3.5.0.(Support IPv6 only environment).
 
 ==================================v0.3.5.0==================================

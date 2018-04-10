@@ -1,17 +1,18 @@
 //
 //  main.m
-//  EspTouch
+//  EspTouchDemo
 //
-//  Created by liubiqu on 07/20/2017.
-//  Copyright (c) 2017 liubiqu. All rights reserved.
+//  Created by 白 桦 on 3/23/15.
+//  Copyright (c) 2015 白 桦. All rights reserved.
 //
 
-@import UIKit;
-#import "EspAppDelegate.h"
+#import <UIKit/UIKit.h>
+
+#import "ESPAppDelegate.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([EspAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([ESPAppDelegate class]));
     }
 }
