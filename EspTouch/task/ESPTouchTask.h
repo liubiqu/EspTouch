@@ -11,7 +11,7 @@
 #import "ESPTouchDelegate.h"
 #import "ESPAES.h"
 
-#define ESPTOUCH_VERSION    @"v0.3.5.4"
+#define ESPTOUCH_VERSION    @"v0.3.7.0"
 
 #define DEBUG_ON   YES
 
@@ -28,9 +28,9 @@
  *            the Ap's ssid
  * @param apBssid
  *            the Ap's bssid
- * @param apPwd
+ * @param apPassword
  *            the Ap's password
- * @param apPwd
+ * @param isSsidHidden
  *            whether the Ap's ssid is hidden
  */
 - (id) initWithApSsid: (NSString *)apSsid andApBssid: (NSString *) apBssid andApPwd: (NSString *)apPwd;
@@ -115,4 +115,9 @@
  */
 - (void) setEsptouchDelegate: (NSObject<ESPTouchDelegate> *) esptouchDelegate;
 
+/**
+ * Set boradcast or multicast when post config info
+ * @param broadcast YES is boradcast, NO is multicast
+ */
+- (void) setPackageBroadcast: (BOOL) broadcast;
 @end

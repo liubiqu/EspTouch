@@ -1,8 +1,25 @@
 Pod::Spec.new do |s|
   s.name             = 'EspTouch'
-  s.version          = '3.5.4'
-  s.summary          = 'EspTouch Espressif wifi module，more see:https://github.com/EspressifApp/EsptouchForIOS.'
+  s.version          = '5.3.1'
+  s.summary          = 'map v1.3.1 EspTouch Espressif wifi module，more see:https://github.com/EspressifApp/EsptouchForIOS.'
   s.description      = <<-DESC
+  
+  ## v1.3.1
+
+  - Optimization of iOS 13.1.2 version wi-fi information acquisition failure problem
+  - add location permissions, wi-fi information acquisition needs
+  - Optimize the page, support iPhone X, iPhone 11 and other models page adaptive
+
+  ## v1.3.0
+
+  - Add the necessary network configuration remind
+  - Optimize the information transmission function in the test
+  - Add permission configuration to get wi-fi information
+
+  ## v0.3.7.1
+  - Remove deprecated constructor of EsptouchTask
+  - Remove EsptouchTask's aes constructor, device doesn't support currently
+  
 ==================================v0.3.5.4  2018-04-09====================== 
 1. Support AES128 encryption
 2. Usage:
