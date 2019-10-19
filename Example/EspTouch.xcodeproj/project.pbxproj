@@ -64,7 +64,7 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87CD5EA72DE019DFDCE8AB9B /* Pods-EspTouch_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EspTouch_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EspTouch_Tests/Pods-EspTouch_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9DE6D89B0FFA6D1EBE976C94 /* Pods_EspTouch_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EspTouch_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BCC291D44B85F0C196A8CE67 /* EspTouch.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = EspTouch.podspec; path = ../EspTouch.podspec; sourceTree = "<group>"; };
+		BCC291D44B85F0C196A8CE67 /* EspTouch.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = EspTouch.podspec; path = ../EspTouch.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C314FB59EC95A11E06EA3EAA /* Pods-EspTouch_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EspTouch_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EspTouch_Example/Pods-EspTouch_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F48ED0D4EFF59944E67BAB31 /* Pods-EspTouch_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EspTouch_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EspTouch_Tests/Pods-EspTouch_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -257,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
