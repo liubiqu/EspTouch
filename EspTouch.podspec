@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'EspTouch'
-  s.version          = '3.1.1'
+  s.version          = 'v1.3.1'
   s.summary          = 'map v1.3.1 EspTouch Espressif wifi module，more see:https://github.com/EspressifApp/EsptouchForIOS.'
   s.description      = <<-DESC
   
