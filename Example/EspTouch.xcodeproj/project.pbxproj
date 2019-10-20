@@ -247,6 +247,9 @@
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = liubiqu;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 22M8FNAV47;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -513,11 +516,12 @@
 			baseConfigurationReference = C314FB59EC95A11E06EA3EAA /* Pods-EspTouch_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 22M8FNAV47;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EspTouch/EspTouch-Prefix.pch";
 				INFOPLIST_FILE = "EspTouch/EspTouch-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lbq.EspTouch-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -528,11 +532,12 @@
 			baseConfigurationReference = 6A7F830163BA9652991F84FC /* Pods-EspTouch_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 22M8FNAV47;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EspTouch/EspTouch-Prefix.pch";
 				INFOPLIST_FILE = "EspTouch/EspTouch-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lbq.EspTouch-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
